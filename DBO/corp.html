@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/fiz.css">
+  <link rel="stylesheet" href="css/corp.css">
 </head>
 
 <body>
@@ -35,77 +35,70 @@
     <h1>Выберите, какими критериями должны обладать ДБО</h1>
     <form action="#">
       <div class="form-item">
-        <p>Какой процент по переводам вы считаете приемлимыми?</p>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="1" checked>
-            Менее 1%
+        <p>Насколько вам важна безопасность? <span id="first-p">(1 - совсем не важна, 10 - очень важна)</span> </p>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label label-inline">
+            1 <input class="form-check-input" type="radio" name="security" value="security1">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="2">
-            1-2%
+          <label class="form-check-label label-inline">
+            2 <input class="form-check-input" type="radio" name="security" value="security2">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="3">
-            2-3%
+          <label class="form-check-label label-inline">
+            3 <input class="form-check-input" type="radio" name="security" value="security3">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="4">
-            3-5%
+          <label class="form-check-label label-inline">
+            4 <input class="form-check-input" type="radio" name="security" value="security4">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="5">
-            Более 5%
+          <label class="form-check-label label-inline">
+            5 <input class="form-check-input" type="radio" name="security" value="security5">
           </label>
-        </div>
-      </div>
-      <div class="form-item">
-        <p>Какой процент по переводам вы считаете приемлимыми?</p>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="1" checked>
-            Менее 1%
+          <label class="form-check-label label-inline">
+            6 <input class="form-check-input" type="radio" name="security" value="security6">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="2">
-            1-2%
+          <label class="form-check-label label-inline">
+            7 <input class="form-check-input" type="radio" name="security" value="security7">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="3">
-            2-3%
+          <label class="form-check-label label-inline">
+            8 <input class="form-check-input" type="radio" name="security" value="security8">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="4">
-            3-5%
+          <label class="form-check-label label-inline">
+            9 <input class="form-check-input" type="radio" name="security" value="security9">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="5">
-            Более 5%
+          <label class="form-check-label label-inline">
+            10 <input class="form-check-input" type="radio" name="security" value="security10">
           </label>
         </div>
       </div>
       <div class="form-item">
-        <p>Какой процент по переводам вы считаете приемлимыми?</p>
+        <p>Какие фунцкии ДБО вы считаете необходимыми?</p>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="1" checked>
-            Менее 1%
+            <input type="checkbox" class="form-check-input" name="bank-account" value="1">
+            Открытие и обслуживание счета
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="2">
-            1-2%
+            <input type="checkbox" class="form-check-input" name="overdraft" value="1">
+            Овердрафт
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="3">
-            2-3%
+            <input type="checkbox" class="form-check-input" name="express-credit" value="1">
+            Экспресс кредит
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="4">
-            3-5%
+            <input type="checkbox" class="form-check-input" name="funds-in-bank" value="1">
+            Возможность размещения средств в интернет банке
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="5">
-            Более 5%
+            <input type="checkbox" class="form-check-input" name="salary-project" value="1">
+            Наличие зарплатного проекта
+          </label>
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="deposit" value="1">
+            Депозиты
+          </label>
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="internet-bank" value="1">
+            Наличие интернет приложения
           </label>
         </div>
       </div>
@@ -114,17 +107,6 @@
       </div>
     </form>
   </div>
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
 </body>
 
 </html>
