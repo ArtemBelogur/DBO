@@ -35,102 +35,173 @@
     <h1>Выберите, какими критериями должны обладать ДБО</h1>
     <form action="#">
       <div class="form-item">
-        <p>Какой процент по переводам вы считаете приемлимыми?</p>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="1" checked>
-            Менее 1%
+        <p>Насколько вам важна безопасность? <span id="first-p">(1 - совсем не важна, 10 - очень важна)</span> </p>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label label-inline">
+            1 <input class="form-check-input" type="radio" name="security" value="security1">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="2">
-            1-2%
+          <label class="form-check-label label-inline">
+            2 <input class="form-check-input" type="radio" name="security" value="security2">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="3">
-            2-3%
+          <label class="form-check-label label-inline">
+            3 <input class="form-check-input" type="radio" name="security" value="security3">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="4">
-            3-5%
+          <label class="form-check-label label-inline">
+            4 <input class="form-check-input" type="radio" name="security" value="security4">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="5">
-            Более 5%
+          <label class="form-check-label label-inline">
+            5 <input class="form-check-input" type="radio" name="security" value="security5">
           </label>
-        </div>
-      </div>
-      <div class="form-item">
-        <p>Какой процент по переводам вы считаете приемлимыми?</p>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="1" checked>
-            Менее 1%
+          <label class="form-check-label label-inline">
+            6 <input class="form-check-input" type="radio" name="security" value="security6">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="2">
-            1-2%
+          <label class="form-check-label label-inline">
+            7 <input class="form-check-input" type="radio" name="security" value="security7">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="3">
-            2-3%
+          <label class="form-check-label label-inline">
+            8 <input class="form-check-input" type="radio" name="security" value="security8">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="4">
-            3-5%
+          <label class="form-check-label label-inline">
+            9 <input class="form-check-input" type="radio" name="security" value="security9">
           </label>
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="5">
-            Более 5%
+          <label class="form-check-label label-inline">
+            10 <input class="form-check-input" type="radio" name="security" value="security10">
           </label>
         </div>
       </div>
       <div class="form-item">
-        <p>Какой процент по переводам вы считаете приемлимыми?</p>
+        <p>Наличие каких критериев наиболее ценно для вас?</p>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="1" checked>
-            Менее 1%
+            <input type="checkbox" class="form-check-input" name="refin" value="1">
+            Рефинансирование
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="2">
-            1-2%
+            <input type="checkbox" class="form-check-input" name="depos" value="1">
+            Депозиты
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="3">
-            2-3%
+            <input type="checkbox" class="form-check-input" name="insurance" value="1">
+            Страхование
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="4">
-            3-5%
+            <input type="checkbox" class="form-check-input" name="invest" value="1">
+            Инвестиции
           </label>
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="percent" id="" value="5">
-            Более 5%
+            <input type="checkbox" class="form-check-input" name="mobile-app" value="1">
+            Мобильное приложение
+          </label>
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="sms" value="1">
+            Мобильная связь
           </label>
         </div>
       </div>
       <div class="form-item">
-        <p>Какие фунцкии вы считаете необходимыми?</p>
+        <p>Какие банковские карты вам необходимы?</p>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="" id="" value="value1">
-            Display value
+            <input type="checkbox" class="form-check-input" name="credit-card" value="1">
+            Кредитные
           </label>
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="" id="" value="value2">
-            Display value
+            <input type="checkbox" class="form-check-input" name="debet-card" value="1">
+            Дебетовые
           </label>
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="" id="" value="value3">
-            Display value
+            <input type="checkbox" class="form-check-input" name="premium-card" value="1">
+            Премиальные
+          </label>
+        </div>
+      </div>
+      <div class="form-item">
+        <p>Какие виды вкладов вам необходимы?</p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="ruble" value="1">
+            Рублевый
           </label>
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="" id="" value="value4">
-            Display value
+            <input type="checkbox" class="form-check-input" name="dollar" value="1">
+            Долларовый
           </label>
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="" id="" value="value5">
-            Display value
+            <input type="checkbox" class="form-check-input" name="euro" value="1">
+            Евро
+          </label>
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="multi" value="1">
+            Мультивалютный
+          </label>
+        </div>
+      </div>
+      <div class="form-item">
+        <p class="italic">Далее вам предлогается выбрать подходящий вам процент по разным кредитным линиям. Если
+          какой-либо вид
+          кредитования вам не нужен, то оставьте поля для выбора пустыми</p>
+      </div>
+      <div class="form-item">
+        <p>Кредит под залог недвижимости</p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-prop" value="7">
+            7-9%
+          </label>
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-prop" value="11">
+            11-12%
+          </label>
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-prop" value="15">
+            Более 15%
+          </label>
+        </div>
+      </div>
+      <div class="form-item">
+        <p>Кредит без залога</p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-without" value="6">
+            6-7%
+          </label>
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-without" value="8">
+            8-9%
+          </label>
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-without" value="10">
+            10-15%
+          </label>
+        </div>
+      </div>
+      <div class="form-item">
+        <p>Кредит под залог авто</p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-auto" value="8">
+            8%
+          </label>
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="percent-auto" value="15">
+            Более 10%
+          </label>
+        </div>
+      </div>
+      <div class="form-item">
+        <p>Автокредит</p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="autocredit" value="1">
+            1-2%
+          </label>
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="autocredit" value="6">
+            6-9%
+          </label>
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="autocredit" value="10">
+            Более 10%
           </label>
         </div>
       </div>
@@ -139,17 +210,6 @@
       </div>
     </form>
   </div>
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
 </body>
 
 </html>
