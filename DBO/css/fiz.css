@@ -78,3 +78,26 @@ form {
 .btn {
   width: 100%;
 }
+
+.form-check-inline .form-check-input {
+  margin-right: 1.5rem;
+}
+
+.form-check-inline {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.label-inline {
+  font-size: 1.2em;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 1em;
+}
+
+#first-p {
+  font-size: 0.65em;
+}
