@@ -101,3 +101,11 @@ form {
 #first-p {
   font-size: 0.65em;
 }
+
+.sm-item {
+  margin-top: -30px;
+}
+
+.sm-item>p {
+  font-size: 1.2em;
+}
