@@ -62,12 +62,13 @@ h1 {
 }
 
 .list-item {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 20px 20px;
   padding: 20px;
 }
 
 .logo {
-  width: 170px;
+  max-width: 25%;
+  height: auto;
 }
 
 .list-benefits {
@@ -83,4 +84,9 @@ h1 {
 
 .list-benefits-item {
   margin-bottom: 5px;
+}
+
+.alpha {
+  height: 55px;
+  align-self: center;
 }
