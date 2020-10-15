@@ -96,6 +96,10 @@
             <input type="checkbox" class="form-check-input" name="sms" value="1">
             Мобильная связь
           </label>
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="multi" value="1">
+            Мультивалютный
+          </label>
         </div>
       </div>
       <div class="form-item">
@@ -116,23 +120,44 @@
         </div>
       </div>
       <div class="form-item">
-        <p>Какие виды вкладов вам необходимы?</p>
+        <p>Какая доходность по вкладам вам нужна?</p>
+      </div>
+      <div class="form-item sm-item">
+        <p>Рублевый вклад</p>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="ruble" value="1">
-            Рублевый
+            <input class="form-check-input" type="radio" name="ruble" value="4">
+            Менее 4%
           </label>
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="dollar" value="1">
-            Долларовый
+            <input class="form-check-input" type="radio" name="ruble" value="5">
+            4 - 5% 
+          </label>
+        </div>
+      </div>
+      <div class="form-item sm-item">
+        <p>Долларовый вклад</p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="ruble" value="0.2">
+            0.1 - 0.3% 
           </label>
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="euro" value="1">
-            Евро
+            <input class="form-check-input" type="radio" name="ruble" value="0.5">
+            0.4 - 0.6% 
+          </label>
+        </div>
+      </div>
+      <div class="form-item sm-item">
+        <p>Евро вклад</p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="ruble" value="0.01">
+            0.01% 
           </label>
           <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" name="multi" value="1">
-            Мультивалютный
+            <input class="form-check-input" type="radio" name="ruble" value="0.1">
+            0.1%
           </label>
         </div>
       </div>
