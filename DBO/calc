@@ -1,0 +1,120 @@
+#include <iostream>
+
+using namespace std;
+
+const int type1 = 8;
+const int type2 = 16;
+const int type3 = 32;
+
+class Number
+{
+public:
+    int num;
+    bool *binNum;
+    int length;
+
+    Number(int num)
+    {
+        this->num = num;
+        this->length = lengthOfBinNum(num);
+        transformNum(num, this->length);
+    }
+
+    int lengthOfBinNum(int num) 
+    {
+        if (num <= 127 && num >= -127)
+            return type1;
+        else if (num <= 32767 && num >= -32767)
+            return type2;
+        else if (num <= 2147483647 && num >= -2147483647)
+            return type3;
+        else
+            return 64;
+    }
+
+    void transformNum(int num, int length)
+    {
+        this->binNum = new bool[length];
+        bool *additionalOne = new bool[length];
+        additionalOne[length - 1] = 1;
+
+        if (num < 0) {
+            for (int i = length - 1; i > 0; i--) {
+                this->binNum[i] = !(bool)(num % 2);
+                num = num / 2;
+            }
+            sum(additionalOne);
+        }    
+        else {
+            this->binNum[0] = false;
+            for (int i = length - 1; i > 0; i--) {
+                this->binNum[i] = (bool)(num % 2);
+                num = num / 2;
+            }
+        }
+    }
+
+    void sum(bool *binNum)
+    {
+        bool additional = false;
+        for (int i = 0; i < this->length; i++) {
+            if (this->binNum[i] == 1 && binNum[i] == 1) {
+                this->binNum[i] = additional;
+                additional = 1;
+            }
+            else if ((this->binNum[i] == 0 && binNum[i] == 1) || (this->binNum[i] == 1 && binNum[i] == 0)) {
+                if (additional == 1)
+                    this->binNum[i] = 0;
+                else
+                    this->binNum[i] = 1;
+            }
+            else {
+                this->binNum[i] = additional;
+                additional = 0;
+            }
+        }
+    }
+
+
+    void outputBinNum() 
+    {
+        for (int i = 0; i < this->length; i++) {
+            cout << this->binNum[i];
+        }
+    }
+};
+
+
+
+int main()
+{
+    int firstNum, secondNum, operation;
+
+    cout << "Enter the first number\n";
+    cin >> firstNum;
+
+    cout << "Enter the second number\n";
+    cin >> secondNum;
+
+    cout << "Enter the operation (1 - sum, 2 - multiplication, 3 - substraction)\n";
+    cin >> operation;
+    cout << endl;
+
+    Number firstNumber = Number(firstNum);
+    Number secondNumber = Number(secondNum);
+
+    cout << "First number in a binary representation: ";
+    firstNumber.outputBinNum();
+    cout << endl << endl;
+
+    cout << "First number in a binary representation: ";
+    secondNumber.outputBinNum();
+
+    cout << endl;
+
+    firstNumber.sum(secondNumber.binNum);
+    cout << "sum in a binary representation: ";
+    firstNumber.outputBinNum();
+
+    return 0;
+}
